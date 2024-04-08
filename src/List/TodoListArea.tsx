@@ -1,13 +1,15 @@
 import { ReactNode } from "react"
+import { useTodoState } from "../Todo/TodoProvider"
 
 interface TodoListAreaProps {
   children: ReactNode
-  todoCount: number
 }
 
 // HOC high order component
 const TodoListArea = (props: TodoListAreaProps) => {
-  if (props.todoCount < 1) return null
+  const todoState = useTodoState()
+
+  if (todoState.todos.length < 1) return null
 
   return (
     <>
