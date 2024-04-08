@@ -1,5 +1,3 @@
-import { saveTodos } from "./todoStorage"
-
 export type TodoType = {
   id: number
   text: string
@@ -42,14 +40,13 @@ export const todoReducer = (state: TodoStateType, action: TodoActionType) => {
         isChecked: false
       })
 
-      saveTodos(newTodos)
       return {
         todos: newTodos
       }
     }
     case "remove": {
       const newTodos = state.todos.filter(todo => (todo.id !== action.payload.id))
-      saveTodos(newTodos)
+
       return {
         todos: newTodos
       }
@@ -67,8 +64,6 @@ export const todoReducer = (state: TodoStateType, action: TodoActionType) => {
 
       })
 
-      saveTodos(newTodos)
-
       return {
         todos: newTodos
       }
@@ -82,15 +77,12 @@ export const todoReducer = (state: TodoStateType, action: TodoActionType) => {
         }
       })
 
-      saveTodos(newTodos)
-
       return {
         todos: newTodos
       }
     }
 
     case "allRemove": {
-      saveTodos([])
       return {
         todos: []
       }
