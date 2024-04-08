@@ -1,5 +1,5 @@
+import { useTodoState } from '../../store/Todo/TodoProvider'
 import TodoItem from '../ListItem/TodoItem'
-import { useTodoState } from '../Todo/TodoProvider'
 import styles from './TodoList.module.css'
 
 const TodoList = () => {

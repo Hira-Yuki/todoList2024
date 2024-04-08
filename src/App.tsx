@@ -1,11 +1,6 @@
 import './App.css';
-import Divider from './Divider/Divider';
-import TodoHeader from './Header/TodoHeader';
-import TodoInput from './Input/TodoInput';
-import TodoList from './List/TodoList';
-import TodoListTools from './Tools/TodoListTools';
-import TodoListArea from './List/TodoListArea';
-import TodoProvider from './Todo/TodoProvider';
+import { Divider, TodoHeader, TodoInput, TodoList, TodoListTools, TodoListArea } from './components';
+import TodoProvider from './store/Todo/TodoProvider';
 
 function App() {
 

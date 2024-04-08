@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { useTodoState } from "../Todo/TodoProvider"
+import { useTodoState } from "../../store/Todo/TodoProvider"
 
 interface TodoListAreaProps {
   children: ReactNode
