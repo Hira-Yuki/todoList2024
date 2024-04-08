@@ -22,7 +22,7 @@
 }
 
 .checkedCircleIcon {
-  color: #32cd32;  
+  color: #32cd32;
 }
 
 .unCheckedCircleIcon {
@@ -35,4 +35,8 @@
   color: red;
   cursor: pointer;
   visibility: hidden;
+}
+.striketgrough {
+  text-decoration: line-through;
+  color: #c0c0c0;
 }
